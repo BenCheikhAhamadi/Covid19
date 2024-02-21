@@ -27,7 +27,7 @@ public class Covid19Application implements CommandLineRunner {
 		SimpleDateFormat date1 = new SimpleDateFormat("yyyy-MM-dd");
 		date = date1.parse("2024-02-20");
 		cas.setDate(date);
-	  icasrepository.save(cas);
+	 // icasrepository.save(cas);
 	  icasrepository.findAll().forEach(c->System.out.println(c.getVille()));
 	}
 }
